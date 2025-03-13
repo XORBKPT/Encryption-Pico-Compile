@@ -25,16 +25,7 @@ ARM Assembly Version with C++ Mapping
 Explains which sections correspond to the C++ code.
 Sculpted for the Raspberry Pi Pico’s ARM Cortex-M0+ processor.
 
-README.md
-markdown
-
-Collapse
-
-Wrap
-
-Copy
 # Pico Message Gadget
-
 This repository contains a message encryption program for the Raspberry Pi Pico, implemented in both C++ and ARM assembly. It uses AES-CBC encryption with PKCS7 padding, leveraging the Pico SDK and mbedTLS library. The C++ version is beginner-friendly, while the ARM assembly version is designed for advanced students to explore low-level programming.
 
 ## Features
@@ -62,14 +53,6 @@ pico_message_gadget/
 ├── README.md          # This file
 └── .gitignore         # Ignore build artifacts
 
-text
-
-Collapse
-
-Wrap
-
-Copy
-
 ## Setup Instructions
 
 1. **Clone the Repository**
@@ -84,12 +67,6 @@ For C++: In CMakeLists.txt, comment out main.S and uncomment main.cpp.
 For Assembly: In CMakeLists.txt, ensure main.S is included and main.cpp is commented out.
 Build the Project
 bash
-
-Collapse
-
-Wrap
-
-Copy
 mkdir build
 cd build
 cmake ..
@@ -103,13 +80,6 @@ Run the Program
 Open a terminal (e.g., PuTTY, Minicom) at 115200 baud.
 Follow the prompts to enter a message, key, and IV.
 Usage Example
-text
-
-Collapse
-
-Wrap
-
-Copy
 Pico Message Gadget
 Enter characters including spaces: Hello Pico
 Enter 32 capital hex letters (secret key): 0123456789ABCDEF0123456789ABCDEF
@@ -131,20 +101,7 @@ Troubleshooting
 Build Errors: Ensure the Pico SDK and mbedTLS are correctly linked.
 No Output: Verify USB connection and terminal settings.
 Assembly Issues: Check register usage and stack alignment.
-Contributing
-Feel free to fork this repository, submit issues, or contribute improvements via pull requests!
-
-License
 This project is open-source under the MIT License.
-
-text
-
-Collapse
-
-Wrap
-
-Copy
-
 7. **`.gitignore`**
 .gitignore - Ignore build artifacts
 build/
@@ -158,15 +115,6 @@ CMakeCache.txt
 CMakeFiles/
 Makefile
 cmake_install.cmake
-
-text
-
-Collapse
-
-Wrap
-
-Copy
-
 ---
 
 ### Instructions for Students
@@ -182,5 +130,3 @@ Copy
 3. **Build and Test:**
    - Follow the README’s build instructions.
    - Test with sample inputs to verify encryption output matches between versions.
-
-This setup provides a comprehensive learning tool, bridging high-level programming with low-level
