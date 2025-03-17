@@ -1,6 +1,6 @@
 ---
 # Pico Message Gadget C++ and Assembler Builds
-The **Pico Message Gadget** is a message encryption tool for the Raspberry Pi Pico, implemented in both C++ and ARM assembly. It utilizes AES-CBC encryption with PKCS7 padding, built with the Pico SDK and mbedTLS library. The C++ version is designed to be accessible for beginners, while the ARM assembly version offers advanced students a deep dive into low-level programming on the ARM Cortex-M0+ processor.
+The **Pico Message Gadget** is a message encryption tool for the Raspberry Pi Pico, implemented in both C++ and ARM assembly for students. It utilizes AES-CBC encryption with PKCS7 padding, built with the Pico SDK and mbedTLS library. The C++ version is designed to be accessible for beginners, while the ARM assembly version offers advanced students a deep dive into low-level programming on the ARM Cortex-M0+ processor.
 ## Features
 - Encrypts user-input messages using a 128-bit AES key and initialization vector (IV).
 - Displays ciphertext in a formatted, readable hex layout.
@@ -100,7 +100,7 @@ Makefile
 cmake_install.cmake
 ```
 ---
-### Instructions for Researchers
+### Instructions for Students ###
 1. **Switch Between Versions**
    - Edit `CMakeLists.txt` to toggle between `main.cpp` (C++) and `main.S` (assembly).
    - Rebuild the project after switching files.
